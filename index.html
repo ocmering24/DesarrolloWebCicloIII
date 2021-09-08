@@ -8,6 +8,7 @@
 </head>
 <body>
     <img src="imagen/uninorte.png" alt="Prueba logo uninorte" sizes="50" srcset="">
+    <a href="pagina2.html"><img src="imagen/ingenieria.jpg" style="max-width:100%;width:auto;height:auto;"  > </a>
 	<h1>Mis canciones favoritas</h1>
 	<h2>Grupo 1</h2>
 	<p>Descripción del grupo</p>
@@ -30,29 +31,130 @@
         <div class=”col-md-3″>MyText</div>
     </div>
 
-    <table>
+    <table border="1">
         <tr class="row">
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
+            <td class="col">prueba1</td>
+            <td class="col">prueba1</td>
+            <td class="col">prueba1</td>
+            <td class="col">prueba1</td>
+            <td class="col">prueba1</td>
         </tr>
         <tr class="row">
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
+            <td class="col">prueba2</td>
+            <td class="col">prueba2</td>
+            <td class="col">prueba2</td>
+            <td class="col">prueba2</td>
+            <td class="col">prueba2</td>
         </tr>
         <tr class="row">
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
-            <td class="col">prueba</td>
+            <td class="col">prueba3</td>
+            <td class="col">prueba3</td>
+            <td class="col">prueba3</td>
+            <td class="col">prueba3</td>
+            <td class="col">prueba3</td>
         </tr>
     </table>
+
+    <table border="1">
+        <tr>
+          <td>China</td><td>1300 millones</td>
+        </tr>
+        <tr>
+          <td>India</td><td>1080 millones</td>
+        </tr>
+        <tr>
+          <td>Estados Unidos</td><td>295 millones</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <caption>Población de los paises con mayor cantidad de habitantes.</caption>
+        <tr>
+          <th>Paises</th><th>Cantidad de habitantes</th><th>Grado</th><th>Integración</th>
+        </tr>
+        <tr>
+          <td>China</td><td>1300 millones</td>
+        </tr>
+        <tr>
+          <td>India</td><td>1080 millones</td>
+        </tr>
+        <tr>
+          <td>Estados Unidos</td><td>295 millones</td>
+        </tr>
+      </table>
+
+      <table border="1">
+        <tr>
+          <td rowspan="4">Recursos</td><td colspan="4">Facturación de los últimos tres meses</td>
+        </tr>
+        <tr>
+          <td>Discos Duros</td><td>23000</td><td>27200</td><td>26000</td>
+        </tr>
+        <tr>
+          <td>CPU</td><td>73000</td><td>67300</td><td>51000</td>
+        </tr>
+        <tr>
+          <td>Monitores</td><td>53000</td><td>72000</td><td>88000</td>
+        </tr>
+      </table>
+
+      <body>
+        <form action="registrardatos.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="30"><br>
+        Ingrese su mail:
+        <input type="text" name="mail" size="50"><br>
+        Comentarios:<br>
+        <textarea name="comentarios" rows="5" cols="60"></textarea> 
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+
+      <form action="registrardatos.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="30"><br>
+        Seleccione los lenguajes que conoce:
+        <br>
+        <input type="checkbox" name="java">Java<br>
+        <input type="checkbox" name="cmasmas">C++<br>
+        <input type="checkbox" name="c">C<br>
+        <input type="checkbox" name="csharp">C#<br>
+        <input type="submit" value="Enviar">
+      </form>
+
+      <form action="registrardatos.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="30"><br>
+        Seleccione su pais:
+        <select name="pais">
+          <option value="1">Argentina</option>
+          <option value="2">España</option>
+          <option value="3">México</option>
+          <option value="4">Guatemala</option>
+          <option value="5">Honduras</option>
+          <option value="7">El Salvador</option>
+          <option value="8">Venezuela</option>
+          <option value="9">Colombia</option>
+          <option value="10">Cuba</option>
+          <option value="11">Bolivia</option>
+          <option value="13">Perú</option>
+          <option value="14">Ecuador</option>
+          <option value="15">Paraguay</option>
+          <option value="16">Uruguay</option>
+          <option value="17">Chile</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
+
+      <form action="registrardatos.php" method="post" enctype="multipart/form-data">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="30"><br>
+        Seleccione la foto:
+        <input type="file" name="foto">
+        <br>
+        <input type="submit" value="Enviar">
+      </form>
 
     <p><strong>Típos de datos</strong> en MySQL</p>
 <p><em>TEXTO</em>: Para almacenar texto usamos cadenas de caracteres. 
@@ -65,7 +167,18 @@ documentos, números telefónicos. Tenemos los siguientes tipos: varchar, char y
  con decimales utilizamos: float o decimal.</p>
 <p><em>FECHAS Y HORAS</em>: para guardar fechas y horas dispone de varios
  tipos: date (fecha), datetime (fecha y hora), time (hora), year (año) y timestamp.</p>
-  
+
+ <dl>
+     <dt>PRUEBA DEFINICION01
+         <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, amet.</dd>
+     </dt>
+     <dt>PRUEBA DEFINICION02
+         <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, est?</dd>
+     </dt>
+     <dt>PRUEBA DEFINICION03
+         <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, quae!</dd>
+     </dt>
+ </dl> 
    </body>
    
 
